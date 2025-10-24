@@ -1,0 +1,26 @@
+{
+  "name": "deadline-timer",
+  "displayName": "Deadline Timer",
+  "description": "Плагин VS Code с таймером до дедлайна, автоматическим предупреждением и картинками.",
+  "version": "1.0.0",
+  "publisher": "YourName", 
+  "engines": {
+    "vscode": "^1.50.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:deadline-timer.start"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "deadline-timer.start",
+        "title": "Start Deadline Timer",
+        "category": "Deadline Timer"
+      }
+    ]
+  }
+}
